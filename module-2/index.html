@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My first Assignment module-2 test</title>
+<meta charset="utf-8">
+<title>Media Queries</title>
 </head>
+<style type="text/css">
+#p1 {
+  background-color: #A52A2A;
+  width: 50px;
+  height: 50px;
+
+}
+#p2 {
+  background-color: #DEB887;
+  width: 50px;
+  height: 50px;
+}
+
+#p2 {
+  background-color: #gray;
+  width: 50px;
+  height: 50px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #p1 {
+    width: 80%;
+
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #p1 {
+    width: 30%;
+  }
+  #p2 {
+    width: 30%;
+   
+  }
+  body {
+    background-color: blue;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #p1 {
+    width: 30%;
+  }
+  #p2 {
+    width: 30%;
+   
+  }
+  body {
+    background-color: blue;
+  }
+}
+
+
+
+</style>
 <body>
-<h1>My first Assignment module-2 test</h1>
+<h1>Our Menu</h1>
+
+<p id="p1">This is where the text goes for chicken</p>
+<p id="p2">This is where the text goes for beef</p>
+<p id="p3">This is where the text goes for Sushi</p>
+
 </body>
 </html>
+
+
+
+
