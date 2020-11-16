@@ -2,94 +2,48 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Media Queries</title>
-</head>
+<title>Two Column Design</title>
 <style>
-	h1 {
-		color: blue;
-		text-align: center;
-	}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  /*background-color: #00FFFF;*/
+}
+p {
+  width: 50%;
+  /*border: 1px solid black;*/
+  float: left;
+  padding: 10px;
+}
 
 #p1 {
-  background-color: #e8acd5;
-  width: 50px;
-  height: 50px;
-
+  background-color: #a28fe0;
 }
 #p2 {
-  background-color: #a28fe0;
-  width: 50px;
-  height: 50px;
+  background-color: #e8acd5;
 }
-
 #p3 {
   background-color: #ace8dc;
-  width: 50px;
-  height: 50px;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  #p1 {
-    width: 30%;
-
-  }
-  #p2 {
-    width: 30%;
-    
-  }
-  #p3 {
-    width: 30%;
-     }
+section {
+  clear: left;
 }
-
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #p1 {
-    width: 30%;
-  }
-  #p2 {
-    width: 30%;
-  
-  }
-  #p3 {
-    width: 30%;
-  
-  }
-}  
-  
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  #p1 {
-    width: 40%;
-  }
-  #p2 {
-    width: 40%;
-  }
-  #p3 {
-    width: 40%;
-  }
-  
-}
-
-
 
 </style>
-
-
-
+</head>
 <body>
 <h1>Our Menu</h1>
 
-<p id="p1">This is where the text goes for chicken</p>
-<p id="p2">This is where the text goes for beef</p>
-<p id="p3">This is where the text goes for Sushi</p>
+<div>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
 
 </body>
 </html>
-
-
-
-
