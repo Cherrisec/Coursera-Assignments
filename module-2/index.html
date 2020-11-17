@@ -8,40 +8,89 @@
 * {
   box-sizing: border-box;
 }
-
-div {
-  /*background-color: #00FFFF;*/
+h1 {
+  color: blue;
+  text-align: center;
 }
+
 p {
-  width: 50%;
-  /*border: 1px solid black;*/
+  width: 30%;
   float: left;
   padding: 10px;
-}
+  margin: 10px; 
+ }
 
-#p1 {
+
+#div1 {
   background-color: #a28fe0;
+  border-width: 3px;
+  border: solid black;
+  
 }
-#p2 {
+#div2 {
   background-color: #e8acd5;
+  border: solid black;
 }
-#p3 {
+#div3 {
   background-color: #ace8dc;
+  border: solid black;
+}
+/********** Desktop view only **********/
+@media (min-width: 992px) {
+  #div1 {
+    width: 30%;
+
+  }
+  #div2 {
+    width: 30%;
+    
+  }
+  #div3 {
+    width: 30%;
+  }
 }
 
-section {
-  clear: left;
-}
 
+/********** Tablet View only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #div1 {
+    width: 45%;
+  }
+  #div2 {
+    width: 45%;
+    
+  }
+  #div3 {
+    width: 90%;
+  }
+}
+  /********** Mobile View only **********/
+@media (max-width: 767px) {
+  #div1 {
+    width: 80%;
+    float: center;
+  }
+  #div2 {
+    width: 80%;
+    float: center;
+      }
+  #div3 {
+    width: 80%;
+    float: center;
+  }
+}
 </style>
 </head>
+
 <body>
 <h1>Our Menu</h1>
 
 <div>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
-  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
-  <section>This is regular content continuing after the the paragraph boxes.</section>
+  <div>
+    <p id="div1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+    <p id="div2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+    <p id="div3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+  </div>
 </div>
 
 
