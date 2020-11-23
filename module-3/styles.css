@@ -1,0 +1,91 @@
+body {
+  font-size: 18px;
+  color: black;
+  background-color: #9ecdf0;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  border-width: 3px;
+  border-color: black;
+}
+body #title{
+  font-size:34px;
+  color: #black;
+  margin-left:50px;
+ }
+/** HEADER **/
+
+
+#header {
+    background-color: grey;
+    border-radius: 0;
+    border-width: 3px 0px;
+    border-color: black;
+    min-height: 75px;
+    position: relative;
+}
+
+
+#button{
+  background-color: #9ecdf0;
+}
+
+#menutitle {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.navbar navbar-light{
+ border-width: 5px;
+ border-color: black;
+}
+/*drop down menu*/
+.nav-item .nav-link{
+  background-color: #cccccc;
+  text-align: center;
+  
+}
+.navbarNav{
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-3 #chicken{
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+
+
+/***************end Header******************/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+.p-3 #chicken{
+  margin-right: 30px;
+  margin-left: 10px;
+}
+  
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.p-3 #chicken{
+  margin-right: 30px;
+  margin-left: 10px;
+  }
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .navbar-brand 
+    padding-top: 10px;
+    height: 80px;
+
+    #chicken 
+    margin-right: 30px;
+    margin-left: 10px;
+  }
