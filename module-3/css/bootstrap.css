@@ -234,11 +234,7 @@ th {
     orphans: 3;
     widows: 3;
   }
-  h2{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-  }
+  h2,
   h3 {
     page-break-after: avoid;
   }
@@ -4282,7 +4278,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4334,7 +4330,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
-  background-color: #111;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
